@@ -1,0 +1,14 @@
+/* pages/login/login.wxss */
+.input-item{
+  display: flex;
+  margin-bottom:10px;
+}
+.input-item input{
+  margin-left: 10px;
+  border:1px solid gray;
+  flex: 1;
+}
+
+/* button{
+  background: skyblue
+} */

@@ -1,0 +1,16 @@
+<!--pages/index/index.wxml-->
+<block wx:for='{{ typeList }}' wx:for-item='items' wx:key='{{ item.id }}'>
+  <view  bindtap='handleClick' data-index='{{ index }}' class='list-items {{ items.opened ? "selected" : ""}}' >
+    <text class='iconfont icon-wendang1'></text>
+    {{ items.name }}
+  </view>
+  <!-- options -->
+  <view class='list-items-item {{ items.opened ? "isShow" : "" }}'>
+    <block wx:for='{{ items.options }}'  wx:key='{{ item.id }}'>
+      <view class='card-item' bindtap='showAction'>
+        <text class=' icon-text iconfont icon-wendang'></text>
+        <text>{{ item.name }}</text>
+      </view>
+    </block>
+  </view>
+</block>

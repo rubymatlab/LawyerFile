@@ -1,0 +1,5 @@
+<!--pages/contract/contract.wxml-->
+<view class='contract-wrapper'>
+    <textarea disabled='true' maxlength='{{ wordCount }}' value='{{ content }}'></textarea>
+    <button type='primary' bindtap='onloadFile'>下载模板</button>
+</view>

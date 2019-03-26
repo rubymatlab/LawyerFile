@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+<view>
+<form bindsubmit='formSubmit' >
+  <view class='input-item'>
+    <text>账号：</text>
+    <input type='text' name='userId' placeholder='请输入账号' :value='userId'></input>
+  </view>
+  <view class='input-item'>
+    <text>账号：</text>
+    <input type='password' name='password' placeholder='请输入密码' :value='password'></input>
+  </view>
+  <block>
+    <button type='primary' formType='submit'>登录</button>
+  </block>
+</form>
+</view>
