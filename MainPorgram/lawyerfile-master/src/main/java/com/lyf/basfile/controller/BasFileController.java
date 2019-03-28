@@ -1,6 +1,10 @@
 package com.lyf.basfile.controller;
+import com.lyf.basfile.entity.BasFileDetailEntity;
 import com.lyf.basfile.entity.BasFileEntity;
 import com.lyf.basfile.service.BasFileServiceI;
+import com.lyf.utils.ExpiredFiles;
+import com.lyf.utils.LicenseUtil;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.text.SimpleDateFormat;
@@ -40,6 +44,8 @@ import org.jeecgframework.poi.excel.entity.vo.NormalExcelConstants;
 import org.jeecgframework.poi.excel.entity.vo.TemplateExcelConstants;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.jeecgframework.core.util.ResourceUtil;
+
+import java.io.File;
 import java.io.IOException;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
@@ -70,10 +76,17 @@ import org.jeecgframework.jwt.util.GsonUtil;
 import org.jeecgframework.jwt.util.ResponseMessage;
 import org.jeecgframework.jwt.util.Result;
 import com.alibaba.fastjson.JSONArray;
+import com.aspose.words.Document;
+import com.aspose.words.DocumentBuilder;
+import com.aspose.words.HtmlSaveOptions;
+import com.aspose.words.ImageSaveOptions;
+import com.aspose.words.SaveFormat;
+
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import net.sf.json.JSONObject;
 
 import org.jeecgframework.web.cgform.entity.upload.CgUploadEntity;
 import org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI;
@@ -413,6 +426,104 @@ public class BasFileController extends BaseController {
 		}
 		return Result.success(task);
 	}
+
+	
+	@RequestMapping(value = "/getContent/{id}", method = RequestMethod.GET)
+	@ResponseBody
+	@ApiOperation(value="根据ID获取用户模板文件内容",notes="根据ID获取用户模板文件内容",httpMethod="GET",produces="application/json")
+	public ResponseMessage<?> getContent(@ApiParam(required=true,name="id",value="ID")@PathVariable("id") String id,HttpServletRequest request) {
+		// 验证License
+        if (!LicenseUtil.getLicense()) {
+            return Result.error("文件读取没有License!");
+        }
+		BasFileEntity task = basFileService.get(BasFileEntity.class, id);
+		if (task == null) {
+			return Result.error("根据ID获取用户每个模版的记录信息为空");
+		}
+		
+        String tempPath=request.getSession().getServletContext().getRealPath("/");
+        //模板word
+		String template=tempPath+task.getBfPath();
+		//目标word
+        //String destdoc = tempPath+"../lawyerfile/export/temp/"+System.currentTimeMillis()+".pdf";
+        //定义文档接口
+        Document doc;
+		try {
+			doc = new Document(template); 
+			List<String> fieldLabel = new ArrayList<String>();
+	        for(String fieldname:doc.getMailMerge().getFieldNames())
+	        	fieldLabel.add(fieldname);
+	        return Result.success(fieldLabel.toArray());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return Result.error(e.getMessage());
+		}
+	}
+	
+	@RequestMapping(value = "/postFileUrl", method = RequestMethod.POST)
+	@ResponseBody
+	@ApiOperation(value="根据模板表单数据获取Url",produces="application/json")
+	public ResponseMessage<?> postFileUrl(@ApiParam(name="模表单数据")@RequestBody Object formobject,HttpServletRequest request) {
+		// 验证License
+        if (!LicenseUtil.getLicense()) {
+            return Result.error("文件读取没有License!");
+        }
+        JSONObject json=JSONObject.fromObject(formobject);
+        
+        String id="";
+        if(json.containsKey("id"))
+        	id=json.getString("id");
+		BasFileEntity task = basFileService.get(BasFileEntity.class, id);
+		if (task == null) {
+			return Result.error("根据ID获取用户每个模版的记录信息为空");
+		}
+		
+		
+		BasFileDetailEntity bfe=new BasFileDetailEntity();
+		bfe.setBfdContent(json.getString("detailvalue"));
+		bfe.setBasFileOid(id);
+		basFileService.save(bfe);
+		
+		JSONObject detailvalue=JSONObject.fromObject(bfe.getBfdContent());
+		
+        String tempPath=request.getSession().getServletContext().getRealPath("/");
+        //模板word
+		String template=tempPath+task.getBfPath();
+		//目标word
+		File templateFile = new File(template); 
+		String desFileName=System.currentTimeMillis()+ templateFile.getName();
+		String desFolder=tempPath+"export/temp/";
+        String destdoc = desFolder+desFileName;
+        //定义文档接口
+        Document doc;
+		try {
+			doc = new Document(template); 
+			List<String> fieldLabel = new ArrayList<String>();
+			List<String> fieldValue = new ArrayList<String>();
+	        for(String fieldname:doc.getMailMerge().getFieldNames())
+	        {
+	        	fieldLabel.add(fieldname);
+	        	if(detailvalue.containsKey(fieldname))
+	        		fieldValue.add(detailvalue.getString(fieldname));
+	        	else
+	        		fieldValue.add("");
+	        }
+	        //调用接口
+	        String[] fieldArray = fieldLabel.toArray(new String[fieldLabel.size()]);
+	        doc.getMailMerge().execute(fieldArray, fieldValue.toArray());
+	        doc.save(destdoc);
+	        ExpiredFiles.Delete(desFolder);
+	        
+	        return Result.success("export/temp/"+desFileName);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return Result.error(e.getMessage());
+		}
+	}
+	
+
 
 	@RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody

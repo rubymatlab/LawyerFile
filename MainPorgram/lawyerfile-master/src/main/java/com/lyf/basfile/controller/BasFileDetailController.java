@@ -1,5 +1,7 @@
 package com.lyf.basfile.controller;
 import com.lyf.basfile.entity.BasFileDetailEntity;
+import com.lyf.basfile.entity.BasFileEntity;
+import com.lyf.basfile.entity.VwBasFileDetailEntity;
 import com.lyf.basfile.service.BasFileDetailServiceI;
 import java.util.ArrayList;
 import java.util.List;
