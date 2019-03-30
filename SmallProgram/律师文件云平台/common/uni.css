@@ -1227,12 +1227,14 @@ checkbox-group label {
 	padding: 20upx;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 
 .image-view {
 	height: 160upx;
 	width: 160upx;
 	margin: 12upx 0;
+	position: relative;
 }
 
 .uni-product-image {

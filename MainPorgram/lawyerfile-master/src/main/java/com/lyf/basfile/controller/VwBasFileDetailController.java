@@ -76,6 +76,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import net.sf.json.JSONObject;
 
 /**   
  * @Title: Controller  
@@ -362,6 +363,30 @@ public class VwBasFileDetailController extends BaseController {
 		CriteriaQuery query = new CriteriaQuery(VwBasFileDetailEntity.class);
 		query.setCurPage(pageNo<=0?1:pageNo);
 		query.setPageSize(pageSize<1?1:pageSize);
+		List<VwBasFileDetailEntity> listVwBasFileDetails = this.vwBasFileDetailService.getListByCriteriaQuery(query,true);
+		return Result.success(listVwBasFileDetails);
+	}
+	
+	@RequestMapping(value="/listdetail", method = RequestMethod.POST)
+	@ResponseBody
+	@ApiOperation(value="获取当前用户的保存记录",produces="application/json")
+	public ResponseMessage<List<VwBasFileDetailEntity>> listdetail(@ApiParam(name="获取当前用户的保存记录")@RequestBody Object obj, HttpServletRequest request) {
+
+		JSONObject json=JSONObject.fromObject(obj);
+		int pageNo= json.getInt("pageNo");
+		int pageSize= json.getInt("pageSize");
+		String userName= json.getString("userName");
+		if(pageSize > Globals.MAX_PAGESIZE){
+			return Result.error("每页请求不能超过" + Globals.MAX_PAGESIZE + "条");
+		}
+		CriteriaQuery query = new CriteriaQuery(VwBasFileDetailEntity.class);
+		query.setCurPage(pageNo<=0?1:pageNo);
+		query.setPageSize(pageSize<1?1:pageSize);
+		query.eq("createBy", userName);
+		Map<String,Object> map = new HashMap<String,Object>();  
+		map.put("createDate", "desc");  
+		query.setOrder(map);
+		query.add();
 		List<VwBasFileDetailEntity> listVwBasFileDetails = this.vwBasFileDetailService.getListByCriteriaQuery(query,true);
 		return Result.success(listVwBasFileDetails);
 	}

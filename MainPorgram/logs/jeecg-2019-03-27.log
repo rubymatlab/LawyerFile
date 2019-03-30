@@ -1,0 +1,212 @@
+[2019-03-27 00:01:25] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:14:46] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:17:02] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:19:58] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:20:41] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:21:17] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:21:17] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-03-27 00:21:26] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:21:54] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:22:31] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:23:51] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:32:06] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:34:03] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:36:13] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:38:24] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:39:25] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:40:47] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:41:55] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:42:34] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:43:46] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-03-27 00:43:46] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-03-27 00:43:54] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\upload\files\20180715\qq_1531625977907.jpg (系统找不到指定的路径。)
+[2019-03-27 00:43:54] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\20170502\4afbfbedab64034f9015f1bca8c379310b551dab.jpg (系统找不到指定的路径。)
+[2019-03-27 00:43:55] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\upload\files\20180715\qq_1531625977907.jpg (系统找不到指定的路径。)
+[2019-03-27 00:46:51] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:47:33] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:49:12] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:49:12] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-03-27 00:49:18] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:49:39] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:55:19] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 00:57:11] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 01:00:00] [INFO] [org.jeecgframework.core.util.LogUtil:228] [org.jeecgframework.core.timer.Job:oneOClockPerDay():25] - 1h
+[2019-03-27 01:01:18] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 01:01:18] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-03-27 01:01:22] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 01:01:22] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-03-27 01:01:31] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 01:01:40] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 01:01:40] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-03-27 01:01:45] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 01:31:35] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 01:33:08] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 01:33:08] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-03-27 01:33:12] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgdynamgraph.dao.core.CgDynamGraphDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormFieldDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormVersionDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.upload.CgFormUploadDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgreport.dao.core.CgReportDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.DepartAuthGroupDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.JeecgDictDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.demo.dao.JeecgMinidaoDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.mutiLang.dao.P3MutiLangDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.dict.dao.TSTypeDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.table.dao.CustomTableDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.dao.TSOperationDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.actInvite.dao.WxActInviteDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.auth.dao.JwSystemAuthDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderCustomDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderMainDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderProductDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ChatMessageHistoryDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ImDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailAttachDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailReceiverDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSBaseUserDao }
+[2019-03-27 13:57:13] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSUserDao }
+[2019-03-27 13:57:14] [INFO] [com.alibaba.druid.pool.DruidDataSource:928] {dataSource-1} inited
+[2019-03-27 13:57:16] [WARN] [org.hibernate.id.UUIDHexGenerator:59] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[2019-03-27 13:57:17] [WARN] [net.sf.ehcache.config.CacheConfiguration:698] Cache 'foreverCache' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'foreverCache' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+[2019-03-27 13:57:19] [INFO] [org.quartz.impl.StdSchedulerFactory:1208] Using default implementation for ThreadExecutor
+[2019-03-27 13:57:20] [INFO] [org.quartz.core.SchedulerSignalerImpl:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-03-27 13:57:20] [INFO] [org.quartz.core.QuartzScheduler:229] Quartz Scheduler v.2.3.0 created.
+[2019-03-27 13:57:20] [INFO] [org.quartz.simpl.RAMJobStore:155] RAMJobStore initialized.
+[2019-03-27 13:57:20] [INFO] [org.quartz.core.QuartzScheduler:294] Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-03-27 13:57:20] [INFO] [org.quartz.impl.StdSchedulerFactory:1362] Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+[2019-03-27 13:57:20] [INFO] [org.quartz.impl.StdSchedulerFactory:1366] Quartz scheduler version: 2.3.0
+[2019-03-27 13:57:20] [INFO] [org.quartz.core.QuartzScheduler:2287] JobFactory set to: org.jeecgframework.web.system.sms.util.JQuartzJobFactory@32e2bf20
+[2019-03-27 13:57:20] [INFO] [org.jeecgframework.core.timer.DynamicTask:252]  register time task class num is [0] 
+[2019-03-27 13:57:23] [INFO] [org.jeecgframework.core.timer.DataBaseSchedulerFactoryBean:648] Starting Quartz Scheduler now
+[2019-03-27 13:57:23] [INFO] [org.quartz.core.QuartzScheduler:547] Scheduler schedulerFactory_$_NON_CLUSTERED started.
+[2019-03-27 13:57:23] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:180]   ------ 初始化字典组 【系统缓存】-----------typeGroupsList-----size: [40]
+[2019-03-27 13:57:23] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:181]   ------ 初始化字典 【系统缓存】-----------typesList-----size: [40]
+[2019-03-27 13:57:23] [INFO] [org.jeecgframework.web.system.service.impl.MutiLangServiceImpl:43]   ------ 初始化国际化语言【系统缓存】  ------ size: [1219] 
+[2019-03-27 13:57:23] [INFO] [org.jeecgframework.web.system.service.impl.DynamicDataSourceServiceImpl:41]   ------ 初始化动态数据源配置【系统缓存】---------size: [2] 
+[2019-03-27 13:59:09] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 14:27:13] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 14:36:42] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 17:30:22] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 17:31:00] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 17:31:52] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 17:31:52] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-03-27 17:31:57] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 17:44:23] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 17:45:11] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 17:46:36] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 17:51:19] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:03:13] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:04:34] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:04:34] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-03-27 18:04:40] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:11:55] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:13:03] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:23:46] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:33:30] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:33:30] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-03-27 18:33:36] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:37:22] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:50:17] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 18:51:37] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgdynamgraph.dao.core.CgDynamGraphDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormFieldDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormVersionDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.upload.CgFormUploadDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgreport.dao.core.CgReportDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.DepartAuthGroupDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.JeecgDictDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.demo.dao.JeecgMinidaoDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.mutiLang.dao.P3MutiLangDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.dict.dao.TSTypeDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.table.dao.CustomTableDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.dao.TSOperationDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.actInvite.dao.WxActInviteDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.auth.dao.JwSystemAuthDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderCustomDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderMainDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderProductDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ChatMessageHistoryDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ImDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailAttachDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailReceiverDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSBaseUserDao }
+[2019-03-27 22:08:18] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSUserDao }
+[2019-03-27 22:08:19] [INFO] [com.alibaba.druid.pool.DruidDataSource:928] {dataSource-1} inited
+[2019-03-27 22:08:22] [WARN] [org.hibernate.id.UUIDHexGenerator:59] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[2019-03-27 22:08:23] [WARN] [net.sf.ehcache.config.CacheConfiguration:698] Cache 'foreverCache' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'foreverCache' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+[2019-03-27 22:08:26] [INFO] [org.quartz.impl.StdSchedulerFactory:1208] Using default implementation for ThreadExecutor
+[2019-03-27 22:08:26] [INFO] [org.quartz.core.SchedulerSignalerImpl:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-03-27 22:08:26] [INFO] [org.quartz.core.QuartzScheduler:229] Quartz Scheduler v.2.3.0 created.
+[2019-03-27 22:08:26] [INFO] [org.quartz.simpl.RAMJobStore:155] RAMJobStore initialized.
+[2019-03-27 22:08:26] [INFO] [org.quartz.core.QuartzScheduler:294] Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-03-27 22:08:26] [INFO] [org.quartz.impl.StdSchedulerFactory:1362] Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+[2019-03-27 22:08:26] [INFO] [org.quartz.impl.StdSchedulerFactory:1366] Quartz scheduler version: 2.3.0
+[2019-03-27 22:08:26] [INFO] [org.quartz.core.QuartzScheduler:2287] JobFactory set to: org.jeecgframework.web.system.sms.util.JQuartzJobFactory@4c7232d9
+[2019-03-27 22:08:27] [INFO] [org.jeecgframework.core.timer.DynamicTask:252]  register time task class num is [0] 
+[2019-03-27 22:08:30] [INFO] [org.jeecgframework.core.timer.DataBaseSchedulerFactoryBean:648] Starting Quartz Scheduler now
+[2019-03-27 22:08:30] [INFO] [org.quartz.core.QuartzScheduler:547] Scheduler schedulerFactory_$_NON_CLUSTERED started.
+[2019-03-27 22:08:30] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:180]   ------ 初始化字典组 【系统缓存】-----------typeGroupsList-----size: [40]
+[2019-03-27 22:08:30] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:181]   ------ 初始化字典 【系统缓存】-----------typesList-----size: [40]
+[2019-03-27 22:08:30] [INFO] [org.jeecgframework.web.system.service.impl.MutiLangServiceImpl:43]   ------ 初始化国际化语言【系统缓存】  ------ size: [1219] 
+[2019-03-27 22:08:30] [INFO] [org.jeecgframework.web.system.service.impl.DynamicDataSourceServiceImpl:41]   ------ 初始化动态数据源配置【系统缓存】---------size: [2] 
+[2019-03-27 22:17:01] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:30:15] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:39:46] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:40:40] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:44:52] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:46:20] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:46:58] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:48:16] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:49:32] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:54:01] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:56:09] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:57:36] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 22:59:39] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:00:31] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:01:20] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:02:50] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:04:51] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:09:39] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:12:21] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:13:38] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:14:51] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:14:51] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-03-27 23:14:59] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:15:44] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:16:13] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-03-27 23:16:13] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-03-27 23:16:15] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\upload\files\20180715\qq_1531625977907.jpg (系统找不到指定的路径。)
+[2019-03-27 23:16:15] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\20170502\4afbfbedab64034f9015f1bca8c379310b551dab.jpg (系统找不到指定的路径。)
+[2019-03-27 23:20:16] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:23:31] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:28:27] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:28:57] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:29:23] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:34:27] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:37:49] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:39:25] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:43:43] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:44:25] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:44:59] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:45:52] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:47:49] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:50:12] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:52:37] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-03-27 23:54:06] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]

@@ -11,8 +11,9 @@
 
 		<view v-if="hasLogin" class="uni-product-list">
 			<view class="uni-product" v-for="(product,index) in productList" :key="index">
-				<view class="image-view" hover-class="uni-product-hover">
+				<view class="uni-list-cell-navigate_number" hover-class="uni-product-hover">
 					<image v-if="renderImage" class="uni-product-image" :src="product.image" :id="product.id" @click="tapImage"></image>
+					<uni-badge :text="product.count" type="danger"></uni-badge>
 				</view>
 				<view class="uni-product-title">{{product.title}}</view>
 			</view>
@@ -21,9 +22,12 @@
 				<view class="image-view" hover-class="uni-product-hover">
 					<image v-if="renderImage" class="uni-product-image" :src="product.image" :id="product.id" @click="tapDownload"></image>
 				</view>
-				<view class="uni-product-tip" hover-class="uni-product-hover" @click="tapRedict(product.id)">{{product.title}}</view>
+				<view hover-class="uni-product-hover" @click="tapRedict(product.id)">
+					<uni-tag :text="product.title" type="primary" :circle="true"></uni-tag>
+				</view>
 			</view>
 		</view>
+
 		<view v-if="!hasLogin" class="hello">
 			<view class="title">
 				<text>您好 游客。</text>
@@ -34,10 +38,16 @@
 </template>
 
 <script>
+	import uniTag from '@/components/uni-tag.vue';
+	import uniBadge from "@/components/uni-badge.vue";
 	import {
 		mapState
 	} from 'vuex'
 	export default {
+		components: {
+			uniTag,
+			uniBadge
+		},
 		data() {
 			return {
 				loadingText: {
@@ -90,7 +100,6 @@
 			}
 		},
 		onShow() {
-
 			if (this.hasLogin && !this.isOnShow) {
 				uni.request({
 					url: this.GLOBAL + '/rest/basFileController/list/1/1000',
@@ -133,7 +142,7 @@
 		},
 		methods: {
 			/*顶部导航*/
-			getElSize(id) { //得到元素的size
+			getElSize(id) { 
 				return new Promise((res, rej) => {
 					uni.createSelectorQuery().select('#' + id).fields({
 						size: true,
@@ -143,7 +152,7 @@
 					}).exec();
 				});
 			},
-			async tapTab(index) { //点击tab-bar
+			async tapTab(index) { 
 				if (this.tabIndex === index) {
 					return false;
 				} else {
@@ -181,9 +190,20 @@
 						this.jsonfolderData.push({
 							image: this.imgfolderUrl,
 							title: item.bfName,
-							id: item.id
+							id: item.id,
+							count: 0
 						});
 				});
+				//统计每个文件夹下的文件
+				this.jsonfolderData.forEach(item => {
+					let count = 0;
+					this.jsonFileArray.forEach(item1 => {
+						if (item1.bfParentid == item.id)
+							count++;
+					});
+					item.count=count;
+				})
+
 			},
 			loadData(action = 'refresh') {
 				const data = this.jsonfolderData;
@@ -232,32 +252,30 @@
 				this.loadWordIndex(e.currentTarget.id);
 				this.loadDataFile();
 			},
-			tapDownload(e)
-			{
-				
+			tapDownload(e) {
 				uni.showLoading({
-					title:'下载中'
+					title: '下载中'
 				});
 				this.jsonFileArray.forEach(item => {
 					if (item.id === e.currentTarget.id)
 						uni.downloadFile({
-							url: this.GLOBAL + '/'+item.bfPath,
+							url: this.GLOBAL + '/' + item.bfPath,
 							success: (res) => {
 								uni.hideLoading();
 								wx.openDocument({
-								  filePath: res.tempFilePath ,
-								  success: function (res) {
-									uni.showToast({
-										icon: 'none',
-										title: "打开文档成功",
-									});
-								  }
+									filePath: res.tempFilePath,
+									success: function(res) {
+										uni.showToast({
+											icon: 'none',
+											title: "打开文档成功",
+										});
+									}
 								});
 							},
 							fail: (err) => {
 								uni.showToast({
 									icon: 'none',
-									title: "错误消息:"+err,
+									title: "错误消息:" + err,
 								});
 							}
 						})
@@ -268,7 +286,7 @@
 					uni.navigateTo({
 						url: '../preview/preview?id=' + currentId,
 					});
-				} 
+				}
 			}
 		}
 	}
@@ -293,4 +311,12 @@
 	}
 
 	/* #endif */
+	.uni-list-cell-navigate_number {
+		height: 160upx;
+		width: 190upx;
+		margin: 12upx 0;
+		position: relative;
+		display: flex;
+		align-items: flex-start;
+	}
 </style>

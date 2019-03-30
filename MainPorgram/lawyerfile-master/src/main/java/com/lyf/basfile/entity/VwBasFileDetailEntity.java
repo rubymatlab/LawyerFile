@@ -41,6 +41,11 @@ public class VwBasFileDetailEntity implements java.io.Serializable {
 	/**模版内容*/
 	@Excel(name="模版内容",width=15)
 	private java.lang.String bfdContent;
+	@Excel(name="文件路径",width=15)
+	private java.lang.String bfPath;
+	/**是否收藏*/
+	@Excel(name="是否收藏",width=15,dicCode="sf_yn")
+	private java.lang.String bfdStore;
 	/**创建人名称*/
 	private java.lang.String createName;
 	/**创建人登录名称*/
@@ -125,6 +130,42 @@ public class VwBasFileDetailEntity implements java.io.Serializable {
 	public void setBfdContent(java.lang.String bfdContent){
 		this.bfdContent = bfdContent;
 	}
+	/**
+	 *方法: 取得java.lang.String
+	 *@return: java.lang.String  文件路径
+	 */
+
+	@Column(name ="BF_PATH",nullable=true,length=50)
+	public java.lang.String getBfPath(){
+		return this.bfPath;
+	}
+
+	/**
+	 *方法: 设置java.lang.String
+	 *@param: java.lang.String  文件路径
+	 */
+	public void setBfPath(java.lang.String bfPath){
+		this.bfPath = bfPath;
+	}
+
+	/**
+	 *方法: 取得java.lang.String
+	 *@return: java.lang.String  是否收藏
+	 */
+
+	@Column(name ="BFD_STORE",nullable=true,length=2)
+	public java.lang.String getBfdStore(){
+		return this.bfdStore;
+	}
+
+	/**
+	 *方法: 设置java.lang.String
+	 *@param: java.lang.String  是否收藏
+	 */
+	public void setBfdStore(java.lang.String bfdStore){
+		this.bfdStore = bfdStore;
+	}
+	
 	/**
 	 *方法: 取得java.lang.String
 	 *@return: java.lang.String  创建人名称

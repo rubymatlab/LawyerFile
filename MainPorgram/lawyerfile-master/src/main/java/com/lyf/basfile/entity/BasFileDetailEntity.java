@@ -22,7 +22,7 @@ import org.jeecgframework.poi.excel.annotation.Excel;
  * @Title: Entity
  * @Description: 用户每个模版的记录
  * @author onlineGenerator
- * @date 2019-03-25 22:03:03
+ * @date 2019-03-30 19:24:06
  * @version V1.0   
  *
  */
@@ -50,6 +50,9 @@ public class BasFileDetailEntity implements java.io.Serializable {
 	private java.lang.String updateBy;
 	/**更新日期*/
 	private java.util.Date updateDate;
+	/**是否收藏*/
+	@Excel(name="是否收藏",width=15,dicCode="sf_yn")
+	private java.lang.String bfdStore;
 	
 	/**
 	 *方法: 取得java.lang.String
@@ -206,5 +209,22 @@ public class BasFileDetailEntity implements java.io.Serializable {
 	 */
 	public void setUpdateDate(java.util.Date updateDate){
 		this.updateDate = updateDate;
+	}
+	/**
+	 *方法: 取得java.lang.String
+	 *@return: java.lang.String  是否收藏
+	 */
+
+	@Column(name ="BFD_STORE",nullable=true,length=2)
+	public java.lang.String getBfdStore(){
+		return this.bfdStore;
+	}
+
+	/**
+	 *方法: 设置java.lang.String
+	 *@param: java.lang.String  是否收藏
+	 */
+	public void setBfdStore(java.lang.String bfdStore){
+		this.bfdStore = bfdStore;
 	}
 }

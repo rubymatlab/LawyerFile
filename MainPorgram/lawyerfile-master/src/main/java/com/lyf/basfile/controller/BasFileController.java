@@ -6,6 +6,7 @@ import com.lyf.utils.ExpiredFiles;
 import com.lyf.utils.LicenseUtil;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.text.SimpleDateFormat;
 import javax.servlet.http.HttpServletRequest;
@@ -29,6 +30,7 @@ import org.jeecgframework.core.common.model.json.DataGrid;
 import org.jeecgframework.core.constant.Globals;
 import org.jeecgframework.core.util.StringUtil;
 import org.jeecgframework.tag.core.easyui.TagUtil;
+import org.jeecgframework.web.system.pojo.base.TSBaseUser;
 import org.jeecgframework.web.system.pojo.base.TSDepart;
 import org.jeecgframework.web.system.service.SystemService;
 import org.jeecgframework.core.util.MyBeanUtils;
@@ -479,13 +481,75 @@ public class BasFileController extends BaseController {
 			return Result.error("根据ID获取用户每个模版的记录信息为空");
 		}
 		
-		
+		List<TSBaseUser> listTsbu=basFileService.findByProperty(TSBaseUser.class,"userName",json.getString("createby"));
 		BasFileDetailEntity bfe=new BasFileDetailEntity();
 		bfe.setBfdContent(json.getString("detailvalue"));
 		bfe.setBasFileOid(id);
+		bfe.setCreateBy(listTsbu.get(0).getUserName());
+		bfe.setCreateName(listTsbu.get(0).getRealName());
+		bfe.setCreateDate(new Date());
+		
 		basFileService.save(bfe);
 		
 		JSONObject detailvalue=JSONObject.fromObject(bfe.getBfdContent());
+		
+        String tempPath=request.getSession().getServletContext().getRealPath("/");
+        //模板word
+		String template=tempPath+task.getBfPath();
+		//目标word
+		File templateFile = new File(template); 
+		String desFileName=System.currentTimeMillis()+ templateFile.getName();
+		String desFolder=tempPath+"export/temp/";
+        String destdoc = desFolder+desFileName;
+        //定义文档接口
+        Document doc;
+		try {
+			doc = new Document(template); 
+			List<String> fieldLabel = new ArrayList<String>();
+			List<String> fieldValue = new ArrayList<String>();
+	        for(String fieldname:doc.getMailMerge().getFieldNames())
+	        {
+	        	fieldLabel.add(fieldname);
+	        	if(detailvalue.containsKey(fieldname))
+	        		fieldValue.add(detailvalue.getString(fieldname));
+	        	else
+	        		fieldValue.add("");
+	        }
+	        //调用接口
+	        String[] fieldArray = fieldLabel.toArray(new String[fieldLabel.size()]);
+	        doc.getMailMerge().execute(fieldArray, fieldValue.toArray());
+	        doc.save(destdoc);
+	        ExpiredFiles.Delete(desFolder);
+	        
+	        return Result.success("export/temp/"+desFileName);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return Result.error(e.getMessage());
+		}
+	}
+	
+	@RequestMapping(value = "/postFileUrlDetail", method = RequestMethod.POST)
+	@ResponseBody
+	@ApiOperation(value="根据数据库获取Url",produces="application/json")
+	public ResponseMessage<?> postFileUrlDetail(@ApiParam(name="模板消息id")@RequestBody Object formobject,HttpServletRequest request) {
+		// 验证License
+        if (!LicenseUtil.getLicense()) {
+            return Result.error("文件读取没有License!");
+        }
+        JSONObject json=JSONObject.fromObject(formobject);
+        String id="";
+        if(json.containsKey("id"))
+        	id=json.getString("id");
+        BasFileDetailEntity taskdetail = basFileService.get(BasFileDetailEntity.class, id);
+		if(taskdetail==null) {
+			return Result.error("根据ID获取用户每个模版的记录信息为空");
+		}
+        BasFileEntity task = basFileService.get(BasFileEntity.class, taskdetail.getBasFileOid());
+		if (task == null) {
+			return Result.error("根据ID获取用户每个模版的记录信息为空");
+		}
+		JSONObject detailvalue=JSONObject.fromObject(taskdetail.getBfdContent());
 		
         String tempPath=request.getSession().getServletContext().getRealPath("/");
         //模板word

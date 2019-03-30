@@ -35,7 +35,7 @@
 				fieldArray: []
 			}
 		},
-		computed: mapState(['accessToken']),
+		computed: mapState(['accessToken','userName']),
 		onLoad: function(options) {
 			this.fileid = options.id;
 			uni.showLoading({
@@ -53,14 +53,13 @@
 					uni.hideLoading();
 					if (res.statusCode === 200) {
 						this.fieldArray = res.data.data;
-						console.log(this.fieldArray);
 					}
 				}
 			});
 		},
 		methods: {
 			formSubmit: function(e) {
-				console.log(JSON.stringify(e.detail.value));
+				//console.log(JSON.stringify(e.detail.value));
 				uni.showLoading({
 					title: '提交中'
 				});
@@ -69,7 +68,8 @@
 					method: 'POST',
 					data: {
 						detailvalue:e.detail.value,
-						id:this.fileid
+						id:this.fileid,
+						createby:this.userName
 					},
 					header: {
 						'content-type': 'application/json',
@@ -100,13 +100,11 @@
 									});
 								}
 							})
-							console.log(vardata);
 						}
 					}
 				});
 			},
 			formReset: function(e) {
-				console.log("清空数据")
 				this.chosen = ''
 			}
 

@@ -76,6 +76,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
+import net.sf.json.JSONObject;
 
 /**   
  * @Title: Controller  
@@ -361,6 +362,7 @@ public class BasFileDetailController extends BaseController {
 		return Result.success(listBasFileDetails);
 	}
 	
+	
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	@ResponseBody
 	@ApiOperation(value="根据ID获取用户每个模版的记录信息",notes="根据ID获取用户每个模版的记录信息",httpMethod="GET",produces="application/json")
@@ -401,10 +403,15 @@ public class BasFileDetailController extends BaseController {
 		if (!failures.isEmpty()) {
 			return Result.error(JSONArray.toJSONString(BeanValidators.extractPropertyAndMessage(failures)));
 		}
-
+		
+		BasFileDetailEntity t = basFileDetailService.get(BasFileDetailEntity.class, basFileDetail.getId());
+		if(t==null)
+			t=basFileDetail;
+		else
+			t.setBfdStore(basFileDetail.getBfdStore());
 		//保存
 		try{
-			basFileDetailService.saveOrUpdate(basFileDetail);
+			basFileDetailService.saveOrUpdate(t);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return Result.error("更新用户每个模版的记录信息失败");
