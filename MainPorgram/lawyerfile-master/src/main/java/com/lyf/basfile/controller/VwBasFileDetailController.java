@@ -376,6 +376,7 @@ public class VwBasFileDetailController extends BaseController {
 		int pageNo= json.getInt("pageNo");
 		int pageSize= json.getInt("pageSize");
 		String userName= json.getString("userName");
+		String isStore=json.getString("isStore");
 		if(pageSize > Globals.MAX_PAGESIZE){
 			return Result.error("每页请求不能超过" + Globals.MAX_PAGESIZE + "条");
 		}
@@ -383,6 +384,9 @@ public class VwBasFileDetailController extends BaseController {
 		query.setCurPage(pageNo<=0?1:pageNo);
 		query.setPageSize(pageSize<1?1:pageSize);
 		query.eq("createBy", userName);
+		if("Y".equals(isStore))
+			query.eq("bfdStore", "Y");
+		
 		Map<String,Object> map = new HashMap<String,Object>();  
 		map.put("createDate", "desc");  
 		query.setOrder(map);

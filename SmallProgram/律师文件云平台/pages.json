@@ -50,8 +50,8 @@
         }, {
             "pagePath": "pages/record/record",
             "text": "记录",
-            "iconPath": "static/img/user.png",
-            "selectedIconPath": "static/img/userHL.png"
+            "iconPath": "static/img/record.png",
+            "selectedIconPath": "static/img/recordHL.png"
         }, {
             "pagePath": "pages/user/user",
             "text": "我的",

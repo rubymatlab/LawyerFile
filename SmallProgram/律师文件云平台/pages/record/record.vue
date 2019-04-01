@@ -1,20 +1,51 @@
 <template>
 	<view>
-		<view v-if="hasLogin" class="uni-padding-wrap uni-common-mt">
-			<view class="text" v-for="(vwdetail,index) in data" :key="index">
-				<image class="uni-record-image" hover-class="uni-product-hover" :src="imgFileUrl" @click="tapDownload(vwdetail)">
-				</image>
-				<view style="display: flex;flex-direction: column;">
-					<text>{{vwdetail.bfName}}</text><text>{{vwdetail.createDate}}</text>
-				</view>
-				<view class="tag-view" hover-class="uni-product-hover" @click="tapDownloadDetail(vwdetail)">
-					<uni-tag text="下载" type="primary" :circle="true"></uni-tag>
-				</view>
-				<switch v-if="vwdetail.bfdStore==='Y'" checked @change="switchChange($event,vwdetail)" />
-				<switch v-else @change="switchChange($event,vwdetail)" />
-			</view>
-			<view class="uni-loadmore" v-if="showLoadMore">{{loadMoreText}}</view>
+		<view class="uni-padding-wrap uni-common-mt">
+			<uni-segmented-control :current="current" :values="items" v-on:clickItem="onClickItem" :styleType="styleType"
+			 :activeColor="activeColor"></uni-segmented-control>
 		</view>
+		<view>
+			<view v-show="current === 0">
+				<view v-if="hasLogin" class="uni-padding-wrap uni-common-mt">
+					<view class="csstext" v-for="(vwdetail,index) in data" :key="index">
+						<view hover-class="uni-product-hover">
+							<image class="uni-record-image" :src="imgFileUrl" @click="tapDownload(vwdetail)">
+							</image>
+						</view>
+						<view style="display: flex;flex-direction: column;">
+							<text>{{vwdetail.bfName}}</text><text>{{vwdetail.createDate}}</text>
+						</view>
+						<view class="tag-view" hover-class="uni-product-hover" @click="tapDownloadDetail(vwdetail)">
+							<uni-tag text="下载" type="primary" :circle="true"></uni-tag>
+						</view>
+						<switch v-if="vwdetail.bfdStore==='Y'" checked @change="switchChange($event,vwdetail)" />
+						<switch v-else @change="switchChange($event,vwdetail)" />
+					</view>
+					<view class="uni-loadmore" v-if="showLoadMore">{{loadMoreText}}</view>
+				</view>
+			</view>
+			<view v-show="current === 1">
+				<view v-if="hasLogin" class="uni-padding-wrap uni-common-mt">
+					<view class="csstext" v-for="(vwdetail,index) in data" :key="index">
+						<view hover-class="uni-product-hover">
+							<image class="uni-record-image" :src="imgFileUrl" @click="tapDownload(vwdetail)">
+							</image>
+						</view>
+						<view style="display: flex;flex-direction: column;">
+							<text>{{vwdetail.bfName}}</text><text>{{vwdetail.createDate}}</text>
+						</view>
+						<view class="tag-view" hover-class="uni-product-hover" @click="tapDownloadDetail(vwdetail)">
+							<uni-tag text="下载" type="primary" :circle="true"></uni-tag>
+						</view>
+						<switch v-if="vwdetail.bfdStore==='Y'" checked @change="switchChange($event,vwdetail)" />
+						<switch v-else @change="switchChange($event,vwdetail)" />
+					</view>
+					<view class="uni-loadmore" v-if="showLoadMore">{{loadMoreText}}</view>
+				</view>
+			</view>
+		</view>
+
+
 		<view v-if="!hasLogin" class="hello">
 			<view class="title">
 				<text>您好 游客。</text>
@@ -25,6 +56,7 @@
 </template>
 <script>
 	import uniTag from '@/components/uni-tag.vue';
+	import uniSegmentedControl from '@/components/uni-segmented-control.vue';
 	import {
 		mapState
 	} from 'vuex'
@@ -32,7 +64,8 @@
 
 	export default {
 		components: {
-			uniTag
+			uniTag,
+			uniSegmentedControl
 		},
 		data() {
 			return {
@@ -41,23 +74,35 @@
 				showLoadMore: false,
 				max: 0,
 				nodata: false,
-				imgFileUrl: '../../static/img/word.png'
+				imgFileUrl: '../../static/img/word.png',
+				/*N显示所有,Y显示收藏 */
+				isStore: 'N',
+
+				items: [
+					'历史记录',
+					'收藏记录'
+				],
+				current: 0,
+				activeColor: '#007aff',
+				styleType: 'text',
+				styleIndex: 0,
+				colorIndex: 0,
 			}
 		},
 		computed: mapState(['accessToken', 'userName', 'hasLogin']),
 		onLoad() {
 			//this.initData();
-		},
-		onShow() {
 			if (this.hasLogin) {
 				this.initData();
 			}
+		},
+		onShow() {
 		},
 		onReachBottom() {
 			//console.log("onReachBottom");
 			this.showLoadMore = true;
 			/* setTimeout(() => { */
-				this.setDate();
+			this.setDate();
 			/* }, 300); */
 		},
 		onPullDownRefresh() {
@@ -68,20 +113,32 @@
 		methods: {
 			initData() {
 				/* setTimeout(() => { */
-					this.max = 0;
-					this.data = [];
-					this.max += 10;
-					//数据初始化
-					this.nodata = false;
-					this.loadMoreText = "";
-					this.requestData(this.max / 10);
-					uni.stopPullDownRefresh();
+				this.max = 0;
+				this.data = [];
+				this.max += 10;
+				//数据初始化
+				this.nodata = false;
+				this.loadMoreText = "";
+				this.requestData(this.max / 10);
+				uni.stopPullDownRefresh();
 				/* }, 300); */
 			},
 			setDate() {
 				this.max += 10;
 				this.requestData(this.max / 10);
 				//this.data = this.data.concat(data);
+			},
+			onClickItem(index) {
+				if (this.current !== index) {
+					this.current = index;
+				}
+				if (index === 0) {
+					this.isStore = 'N';
+					this.initData();
+				} else {
+					this.isStore = 'Y';
+					this.initData();
+				}
 			},
 			requestData(pageNo) {
 				let pageSize = 10;
@@ -95,7 +152,8 @@
 						data: {
 							pageNo: pageNo,
 							pageSize: pageSize,
-							userName: this.userName
+							userName: this.userName,
+							isStore: this.isStore
 						},
 						header: {
 							'content-type': 'application/json',
@@ -144,7 +202,7 @@
 				})
 			},
 			tapDownloadDetail(item) {
-				let id=item.id;
+				let id = item.id;
 				uni.showLoading({
 					title: '下载中'
 				});
@@ -176,12 +234,12 @@
 										}
 									});
 								}
-							}) 
+							})
 						}
 					}
 				})
 			},
-			switchChange(e,item) {
+			switchChange(e, item) {
 				let id = item.id;
 				if (e.detail.value)
 					this.requestPutData(id, 'Y', "收藏成功");
@@ -233,7 +291,7 @@
 		font-size: 50upx;
 	}
 
-	.text {
+	.csstext {
 		margin: 16upx 0;
 		width: 100%;
 		background-color: #fff;
