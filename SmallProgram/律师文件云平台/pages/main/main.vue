@@ -18,7 +18,8 @@
 				<view class="uni-product-title">{{product.title}}</view>
 			</view>
 			<view>
-			<cover-image v-if="productListFile.length>0" style="width: 50upx; height: 50upx;" :src="imagArrow"></cover-image>
+				<image v-if="productListFile.length>0" style="width: 50upx; height: 50upx;" :src="imagArrow"></image>
+				<!-- <cover-image v-if="productListFile.length>0" style="width: 50upx; height: 50upx;" :src="imagArrow"></cover-image> -->
 			</view>
 			<view class="uni-product" v-for="(product,index) in productListFile" :key="index">
 				<view class="image-view" hover-class="uni-product-hover">
@@ -128,7 +129,7 @@
 									})
 								}
 							}
-							this.loadIndex(this.tabIndex);
+							this.loadIndex(0);
 							this.loadData();
 							this.productListFile = [];
 						} else {
@@ -146,7 +147,7 @@
 		methods: {
 			...mapMutations(['setOnload']),
 			/*顶部导航*/
-			getElSize(id) { 
+			getElSize(id) {
 				return new Promise((res, rej) => {
 					uni.createSelectorQuery().select('#' + id).fields({
 						size: true,
@@ -156,7 +157,7 @@
 					}).exec();
 				});
 			},
-			async tapTab(index) { 
+			async tapTab(index) {
 				if (this.tabIndex === index) {
 					return false;
 				} else {
@@ -205,7 +206,7 @@
 						if (item1.bfParentid == item.id)
 							count++;
 					});
-					item.count=count;
+					item.count = count;
 				})
 
 			},

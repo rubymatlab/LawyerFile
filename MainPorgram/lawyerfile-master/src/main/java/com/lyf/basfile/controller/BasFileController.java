@@ -414,6 +414,10 @@ public class BasFileController extends BaseController {
 		CriteriaQuery query = new CriteriaQuery(BasFileEntity.class);
 		query.setCurPage(pageNo<=0?1:pageNo);
 		query.setPageSize(pageSize<1?1:pageSize);
+		Map<String,Object> map = new HashMap<String,Object>();  
+		map.put("bfCode", "asc");  
+		query.setOrder(map);
+		query.add();
 		List<BasFileEntity> listBasFiles = this.basFileService.getListByCriteriaQuery(query,true);
 		return Result.success(listBasFiles);
 	}
