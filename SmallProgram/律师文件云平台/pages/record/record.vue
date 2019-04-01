@@ -1,12 +1,12 @@
 <template>
 	<view>
-		<view class="uni-padding-wrap uni-common-mt">
+		<view v-if="hasLogin"  class="uni-padding-wrap uni-common-mt">
 			<uni-segmented-control :current="current" :values="items" v-on:clickItem="onClickItem" :styleType="styleType"
 			 :activeColor="activeColor"></uni-segmented-control>
 		</view>
-		<view>
+		<view v-if="hasLogin">
 			<view v-show="current === 0">
-				<view v-if="hasLogin" class="uni-padding-wrap uni-common-mt">
+				<view class="uni-padding-wrap uni-common-mt">
 					<view class="csstext" v-for="(vwdetail,index) in data" :key="index">
 						<view hover-class="uni-product-hover">
 							<image class="uni-record-image" :src="imgFileUrl" @click="tapDownload(vwdetail)">
@@ -25,7 +25,7 @@
 				</view>
 			</view>
 			<view v-show="current === 1">
-				<view v-if="hasLogin" class="uni-padding-wrap uni-common-mt">
+				<view class="uni-padding-wrap uni-common-mt">
 					<view class="csstext" v-for="(vwdetail,index) in data" :key="index">
 						<view hover-class="uni-product-hover">
 							<image class="uni-record-image" :src="imgFileUrl" @click="tapDownload(vwdetail)">

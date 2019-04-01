@@ -17,7 +17,9 @@
 				</view>
 				<view class="uni-product-title">{{product.title}}</view>
 			</view>
-			<cover-image v-if="productListFile.length>0" style="width: 50upx; height: 50upx;" src="../../static/img/arrow.png"></cover-image>
+			<view>
+			<cover-image v-if="productListFile.length>0" style="width: 50upx; height: 50upx;" :src="imagArrow"></cover-image>
+			</view>
 			<view class="uni-product" v-for="(product,index) in productListFile" :key="index">
 				<view class="image-view" hover-class="uni-product-hover">
 					<image v-if="renderImage" class="uni-product-image" :src="product.image" :id="product.id" @click="tapDownload"></image>
@@ -41,7 +43,8 @@
 	import uniTag from '@/components/uni-tag.vue';
 	import uniBadge from "@/components/uni-badge.vue";
 	import {
-		mapState
+		mapState,
+		mapMutations
 	} from 'vuex'
 	export default {
 		components: {
@@ -68,15 +71,15 @@
 				productList: [],
 				productListFile: [],
 				renderImage: true,
+				/*目录*/
 				imgfolderUrl: '../../static/img/folder.png',
 				/*文件*/
 				imgFileUrl: '../../static/img/word.png',
 				/*箭头*/
-				imagArrow: '../../static/img/arrow.png',
-				isOnShow: false
+				imagArrow: '../../static/img/arrow.png'
 			}
 		},
-		computed: mapState(['forcedLogin', 'hasLogin', 'userName', 'accessToken']),
+		computed: mapState(['forcedLogin', 'hasLogin', 'userName', 'accessToken', 'isOnload']),
 		onLoad() {
 			if (!this.hasLogin) {
 				uni.showModal({
@@ -100,9 +103,9 @@
 			}
 		},
 		onShow() {
-			if (this.hasLogin && !this.isOnShow) {
+			if (this.hasLogin && this.isOnload) {
 				uni.request({
-					url: this.GLOBAL + '/rest/basFileController/list/1/1000',
+					url: this.GLOBAL + '/rest/basFileController/list/1/20000',
 					method: 'GET',
 					data: {},
 					header: {
@@ -125,7 +128,7 @@
 									})
 								}
 							}
-							this.loadIndex(0);
+							this.loadIndex(this.tabIndex);
 							this.loadData();
 							this.productListFile = [];
 						} else {
@@ -136,11 +139,12 @@
 						}
 					}
 				});
-				this.isOnShow = true;
+				this.setOnload(false);
 			}
 
 		},
 		methods: {
+			...mapMutations(['setOnload']),
 			/*顶部导航*/
 			getElSize(id) { 
 				return new Promise((res, rej) => {

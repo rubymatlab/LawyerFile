@@ -11,7 +11,8 @@ const store = new Vuex.Store({
         forcedLogin: false,
         hasLogin: false,
         userName: "",
-		accessToken:""
+		accessToken:"",
+		isOnload:true
     },
     mutations: {
         login(state, userName) {
@@ -25,6 +26,10 @@ const store = new Vuex.Store({
 		setToken(state,accessToken)
 		{
 			state.accessToken=accessToken;
+		},
+		setOnload(state,isOnload)
+		{
+			state.isOnload=isOnload;
 		}
 		
     }

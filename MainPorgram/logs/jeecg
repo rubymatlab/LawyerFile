@@ -596,3 +596,297 @@ java.lang.ClassCastException: java.lang.Character cannot be cast to java.lang.St
 [2019-04-01 09:03:41] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
 [2019-04-01 09:04:34] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
 [2019-04-01 09:07:38] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgdynamgraph.dao.core.CgDynamGraphDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormFieldDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormVersionDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.upload.CgFormUploadDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgreport.dao.core.CgReportDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.DepartAuthGroupDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.JeecgDictDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.demo.dao.JeecgMinidaoDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.mutiLang.dao.P3MutiLangDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.dict.dao.TSTypeDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.table.dao.CustomTableDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.dao.TSOperationDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.actInvite.dao.WxActInviteDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.auth.dao.JwSystemAuthDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderCustomDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderMainDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderProductDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ChatMessageHistoryDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ImDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailAttachDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailReceiverDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSBaseUserDao }
+[2019-04-01 12:46:06] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSUserDao }
+[2019-04-01 12:46:07] [INFO] [com.alibaba.druid.pool.DruidDataSource:928] {dataSource-1} inited
+[2019-04-01 12:46:09] [WARN] [org.hibernate.id.UUIDHexGenerator:59] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[2019-04-01 12:46:10] [WARN] [net.sf.ehcache.config.CacheConfiguration:698] Cache 'foreverCache' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'foreverCache' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+[2019-04-01 12:46:12] [INFO] [org.quartz.impl.StdSchedulerFactory:1208] Using default implementation for ThreadExecutor
+[2019-04-01 12:46:12] [INFO] [org.quartz.core.SchedulerSignalerImpl:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-04-01 12:46:12] [INFO] [org.quartz.core.QuartzScheduler:229] Quartz Scheduler v.2.3.0 created.
+[2019-04-01 12:46:12] [INFO] [org.quartz.simpl.RAMJobStore:155] RAMJobStore initialized.
+[2019-04-01 12:46:12] [INFO] [org.quartz.core.QuartzScheduler:294] Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-04-01 12:46:12] [INFO] [org.quartz.impl.StdSchedulerFactory:1362] Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+[2019-04-01 12:46:12] [INFO] [org.quartz.impl.StdSchedulerFactory:1366] Quartz scheduler version: 2.3.0
+[2019-04-01 12:46:12] [INFO] [org.quartz.core.QuartzScheduler:2287] JobFactory set to: org.jeecgframework.web.system.sms.util.JQuartzJobFactory@4ca0b6c9
+[2019-04-01 12:46:13] [INFO] [org.jeecgframework.core.timer.DynamicTask:252]  register time task class num is [0] 
+[2019-04-01 12:46:15] [INFO] [org.jeecgframework.core.timer.DataBaseSchedulerFactoryBean:648] Starting Quartz Scheduler now
+[2019-04-01 12:46:15] [INFO] [org.quartz.core.QuartzScheduler:547] Scheduler schedulerFactory_$_NON_CLUSTERED started.
+[2019-04-01 12:46:15] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:180]   ------ 初始化字典组 【系统缓存】-----------typeGroupsList-----size: [40]
+[2019-04-01 12:46:15] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:181]   ------ 初始化字典 【系统缓存】-----------typesList-----size: [40]
+[2019-04-01 12:46:15] [INFO] [org.jeecgframework.web.system.service.impl.MutiLangServiceImpl:43]   ------ 初始化国际化语言【系统缓存】  ------ size: [1219] 
+[2019-04-01 12:46:15] [INFO] [org.jeecgframework.web.system.service.impl.DynamicDataSourceServiceImpl:41]   ------ 初始化动态数据源配置【系统缓存】---------size: [2] 
+[2019-04-01 12:49:37] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 12:51:50] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[admin]
+[2019-04-01 12:54:14] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-01 12:54:14] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-01 12:54:16] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\upload\files\20180715\qq_1531625977907.jpg (系统找不到指定的路径。)
+[2019-04-01 12:54:16] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\20170502\4afbfbedab64034f9015f1bca8c379310b551dab.jpg (系统找不到指定的路径。)
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:84] --cgUploadController--saveFiles--上传文件-----{id:2c94b31869d7380f0169d743b0b80005}  {tableName：bas_file}  {cgField:BF_PATH}
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:64] office转换服务启动失败!详细信息:java.lang.IllegalArgumentException: officeHome must exist and be a directory
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:29] 进行文档转换转换:D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\/upload/files/20190401125851TRCMWYTx.docx --> D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\/upload/files/20190401125851TRCMWYTx.pdf
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:35] 
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:69] 关闭office转换服务....
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:73] 关闭office转换成功!
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:39] 进行文档转换转换---- 结束----
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.core.util.LogUtil:228] [org.jeecgframework.core.extend.swftools.SWFToolsSWFConverter:convert2SWF():29] - PDF文件不存在！
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:99] --cgUploadController--saveFiles--上传文件----数据库保存转换成功-----
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:104] --cgUploadController--saveFiles--上传文件----回写业务数据表字段文件路径-----
+[2019-04-01 12:58:51] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:113] --cgUploadController--saveFiles--上传文件----操作成功-----
+[2019-04-01 12:59:46] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[admin]
+[2019-04-01 13:00:53] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 13:03:26] [INFO] [org.jeecgframework.core.util.LogUtil:228] [org.jeecgframework.core.util.FileUtils:delete():171] - --------成功删除文件---------D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\upload/files/20190401125851TRCMWYTx.docx
+[2019-04-01 13:03:26] [INFO] [org.jeecgframework.core.util.LogUtil:228] [org.jeecgframework.core.util.FileUtils:delete():167] - 错误: D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\upload/files/20190401125851TRCMWYTx.pdf不存在!
+[2019-04-01 13:03:26] [INFO] [org.jeecgframework.core.util.LogUtil:228] [org.jeecgframework.core.util.FileUtils:delete():167] - 错误: D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\upload/files/20190401125851TRCMWYTx.swf不存在!
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:84] --cgUploadController--saveFiles--上传文件-----{id:2c94b31869d7380f0169d743b0b80005}  {tableName：bas_file}  {cgField:BF_PATH}
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:64] office转换服务启动失败!详细信息:java.lang.IllegalArgumentException: officeHome must exist and be a directory
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:29] 进行文档转换转换:D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\/upload/files/20190401130335r7LW7u0F.docx --> D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\/upload/files/20190401130335r7LW7u0F.pdf
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:35] 
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:69] 关闭office转换服务....
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:73] 关闭office转换成功!
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:39] 进行文档转换转换---- 结束----
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.core.util.LogUtil:228] [org.jeecgframework.core.extend.swftools.SWFToolsSWFConverter:convert2SWF():29] - PDF文件不存在！
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:99] --cgUploadController--saveFiles--上传文件----数据库保存转换成功-----
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:104] --cgUploadController--saveFiles--上传文件----回写业务数据表字段文件路径-----
+[2019-04-01 13:03:35] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:113] --cgUploadController--saveFiles--上传文件----操作成功-----
+[2019-04-01 13:22:21] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 17:12:20] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 17:14:01] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 17:15:49] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 17:16:06] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 17:16:43] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 17:17:06] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 18:35:39] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 18:36:11] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-01 18:36:11] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-01 18:36:12] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\upload\files\20180715\qq_1531625977907.jpg (系统找不到指定的路径。)
+[2019-04-01 18:36:12] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\20170502\4afbfbedab64034f9015f1bca8c379310b551dab.jpg (系统找不到指定的路径。)
+[2019-04-01 18:52:01] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 18:55:22] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:00:51] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:03:57] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgdynamgraph.dao.core.CgDynamGraphDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormFieldDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormVersionDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.upload.CgFormUploadDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgreport.dao.core.CgReportDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.DepartAuthGroupDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.JeecgDictDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.demo.dao.JeecgMinidaoDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.mutiLang.dao.P3MutiLangDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.dict.dao.TSTypeDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.table.dao.CustomTableDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.dao.TSOperationDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.actInvite.dao.WxActInviteDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.auth.dao.JwSystemAuthDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderCustomDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderMainDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderProductDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ChatMessageHistoryDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ImDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailAttachDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailReceiverDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSBaseUserDao }
+[2019-04-01 19:05:56] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSUserDao }
+[2019-04-01 19:05:56] [INFO] [com.alibaba.druid.pool.DruidDataSource:928] {dataSource-1} inited
+[2019-04-01 19:05:59] [WARN] [org.hibernate.id.UUIDHexGenerator:59] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[2019-04-01 19:06:01] [WARN] [net.sf.ehcache.config.CacheConfiguration:698] Cache 'foreverCache' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'foreverCache' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+[2019-04-01 19:06:01] [WARN] [org.springframework.web.context.support.XmlWebApplicationContext:489] Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'templetLoader': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI org.jeecgframework.web.cgform.engine.DBTempletLoader.cgFormFieldService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:301)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI org.jeecgframework.web.cgform.engine.DBTempletLoader.cgFormFieldService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:522)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	... 22 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:494)
+	... 24 more
+[2019-04-01 19:06:01] [INFO] [com.alibaba.druid.pool.DruidDataSource:1823] {dataSource-1} closed
+[2019-04-01 19:06:01] [ERROR] [org.springframework.web.context.ContextLoader:331] Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'templetLoader': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI org.jeecgframework.web.cgform.engine.DBTempletLoader.cgFormFieldService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:301)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1186)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:229)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:298)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI org.jeecgframework.web.cgform.engine.DBTempletLoader.cgFormFieldService; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:522)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:298)
+	... 22 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [org.jeecgframework.web.cgform.service.config.CgFormFieldServiceI] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1118)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:967)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:862)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:494)
+	... 24 more
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgdynamgraph.dao.core.CgDynamGraphDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormFieldDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormVersionDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.upload.CgFormUploadDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgreport.dao.core.CgReportDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.DepartAuthGroupDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.JeecgDictDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.demo.dao.JeecgMinidaoDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.mutiLang.dao.P3MutiLangDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.dict.dao.TSTypeDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.table.dao.CustomTableDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.dao.TSOperationDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.actInvite.dao.WxActInviteDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.auth.dao.JwSystemAuthDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderCustomDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderMainDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderProductDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ChatMessageHistoryDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ImDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailAttachDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailReceiverDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSBaseUserDao }
+[2019-04-01 19:09:34] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSUserDao }
+[2019-04-01 19:09:36] [INFO] [com.alibaba.druid.pool.DruidDataSource:928] {dataSource-1} inited
+[2019-04-01 19:09:38] [WARN] [org.hibernate.id.UUIDHexGenerator:59] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[2019-04-01 19:09:39] [WARN] [net.sf.ehcache.config.CacheConfiguration:698] Cache 'foreverCache' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'foreverCache' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+[2019-04-01 19:09:42] [INFO] [org.quartz.impl.StdSchedulerFactory:1208] Using default implementation for ThreadExecutor
+[2019-04-01 19:09:42] [INFO] [org.quartz.core.SchedulerSignalerImpl:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-04-01 19:09:42] [INFO] [org.quartz.core.QuartzScheduler:229] Quartz Scheduler v.2.3.0 created.
+[2019-04-01 19:09:42] [INFO] [org.quartz.simpl.RAMJobStore:155] RAMJobStore initialized.
+[2019-04-01 19:09:42] [INFO] [org.quartz.core.QuartzScheduler:294] Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-04-01 19:09:42] [INFO] [org.quartz.impl.StdSchedulerFactory:1362] Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+[2019-04-01 19:09:42] [INFO] [org.quartz.impl.StdSchedulerFactory:1366] Quartz scheduler version: 2.3.0
+[2019-04-01 19:09:42] [INFO] [org.quartz.core.QuartzScheduler:2287] JobFactory set to: org.jeecgframework.web.system.sms.util.JQuartzJobFactory@5532fc22
+[2019-04-01 19:09:43] [INFO] [org.jeecgframework.core.timer.DynamicTask:252]  register time task class num is [0] 
+[2019-04-01 19:09:47] [INFO] [org.jeecgframework.core.timer.DataBaseSchedulerFactoryBean:648] Starting Quartz Scheduler now
+[2019-04-01 19:09:47] [INFO] [org.quartz.core.QuartzScheduler:547] Scheduler schedulerFactory_$_NON_CLUSTERED started.
+[2019-04-01 19:09:47] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:180]   ------ 初始化字典组 【系统缓存】-----------typeGroupsList-----size: [40]
+[2019-04-01 19:09:47] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:181]   ------ 初始化字典 【系统缓存】-----------typesList-----size: [40]
+[2019-04-01 19:09:47] [INFO] [org.jeecgframework.web.system.service.impl.MutiLangServiceImpl:43]   ------ 初始化国际化语言【系统缓存】  ------ size: [1219] 
+[2019-04-01 19:09:47] [INFO] [org.jeecgframework.web.system.service.impl.DynamicDataSourceServiceImpl:41]   ------ 初始化动态数据源配置【系统缓存】---------size: [2] 
+[2019-04-01 19:09:55] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:10:36] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:11:32] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-01 19:11:32] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-01 19:11:35] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\upload\files\20180715\qq_1531625977907.jpg (系统找不到指定的路径。)
+[2019-04-01 19:11:35] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\20170502\4afbfbedab64034f9015f1bca8c379310b551dab.jpg (系统找不到指定的路径。)
+[2019-04-01 19:12:03] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:84] --cgUploadController--saveFiles--上传文件-----{id:2c94b31869d897270169d89d26500007}  {tableName：bas_file}  {cgField:BF_PATH}
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:64] office转换服务启动失败!详细信息:java.lang.IllegalArgumentException: officeHome must exist and be a directory
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:29] 进行文档转换转换:D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\/upload/files/20190401191847TEMHIW9C.docx --> D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\/upload/files/20190401191847TEMHIW9C.pdf
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:35] 
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:69] 关闭office转换服务....
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:73] 关闭office转换成功!
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:39] 进行文档转换转换---- 结束----
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.core.util.LogUtil:228] [org.jeecgframework.core.extend.swftools.SWFToolsSWFConverter:convert2SWF():29] - PDF文件不存在！
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:99] --cgUploadController--saveFiles--上传文件----数据库保存转换成功-----
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:104] --cgUploadController--saveFiles--上传文件----回写业务数据表字段文件路径-----
+[2019-04-01 19:18:47] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:113] --cgUploadController--saveFiles--上传文件----操作成功-----
+[2019-04-01 19:18:57] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:84] --cgUploadController--saveFiles--上传文件-----{id:2c94b31869d897270169d89d86860009}  {tableName：bas_file}  {cgField:BF_PATH}
+[2019-04-01 19:18:57] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:64] office转换服务启动失败!详细信息:java.lang.IllegalArgumentException: officeHome must exist and be a directory
+[2019-04-01 19:18:57] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:29] 进行文档转换转换:D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\/upload/files/20190401191857eCdInvR2.docx --> D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\/upload/files/20190401191857eCdInvR2.pdf
+[2019-04-01 19:18:58] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:35] 
+[2019-04-01 19:18:58] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:69] 关闭office转换服务....
+[2019-04-01 19:18:58] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:73] 关闭office转换成功!
+[2019-04-01 19:18:58] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:39] 进行文档转换转换---- 结束----
+[2019-04-01 19:18:58] [INFO] [org.jeecgframework.core.util.LogUtil:228] [org.jeecgframework.core.extend.swftools.SWFToolsSWFConverter:convert2SWF():29] - PDF文件不存在！
+[2019-04-01 19:18:58] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:99] --cgUploadController--saveFiles--上传文件----数据库保存转换成功-----
+[2019-04-01 19:18:58] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:104] --cgUploadController--saveFiles--上传文件----回写业务数据表字段文件路径-----
+[2019-04-01 19:18:58] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:113] --cgUploadController--saveFiles--上传文件----操作成功-----
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:84] --cgUploadController--saveFiles--上传文件-----{id:2c94b31869d897270169d89dbb4e000b}  {tableName：bas_file}  {cgField:BF_PATH}
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:64] office转换服务启动失败!详细信息:java.lang.IllegalArgumentException: officeHome must exist and be a directory
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:29] 进行文档转换转换:D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\/upload/files/20190401191909dLvRKKp0.docx --> D:\LawyerFile\LawyerFile\MainPorgram\lawyerfile-master\src\main\webapp\/upload/files/20190401191909dLvRKKp0.pdf
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:35] 
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:69] 关闭office转换服务....
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:73] 关闭office转换成功!
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.core.extend.swftools.OpenOfficePDFConverter:39] 进行文档转换转换---- 结束----
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.core.util.LogUtil:228] [org.jeecgframework.core.extend.swftools.SWFToolsSWFConverter:convert2SWF():29] - PDF文件不存在！
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:99] --cgUploadController--saveFiles--上传文件----数据库保存转换成功-----
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:104] --cgUploadController--saveFiles--上传文件----回写业务数据表字段文件路径-----
+[2019-04-01 19:19:09] [INFO] [org.jeecgframework.web.cgform.controller.upload.CgUploadController:113] --cgUploadController--saveFiles--上传文件----操作成功-----
+[2019-04-01 19:20:26] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:20:26] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-04-01 19:20:29] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:21:00] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:21:41] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:24:36] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-01 19:25:13] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
