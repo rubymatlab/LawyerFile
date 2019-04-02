@@ -1,13 +1,8 @@
 <script>
 	import {
-		mapState,
-		mapMutations
+		mapState
 	} from 'vuex'
 	export default {
-		computed: mapState(['isOnload']),
-		methods: {
-			...mapMutations(['setOnload'])
-		},
 		onLaunch: function() {
 			//console.log('App Launch');
 
@@ -17,7 +12,6 @@
 		},
 		onHide: function() {
 			//console.log('App Hide');
-			this.setOnload(true);
 		}
 	}
 </script>

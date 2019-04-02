@@ -104,7 +104,7 @@
 			}
 		},
 		onShow() {
-			if (this.hasLogin && this.isOnload) {
+			if (this.hasLogin) {
 				uni.request({
 					url: this.GLOBAL + '/rest/basFileController/list/1/20000',
 					method: 'GET',
@@ -117,21 +117,26 @@
 						if (res.statusCode === 200) {
 							let json = JSON.stringify(res.data);
 							let jsonObj = JSON.parse(json);
-							this.jsonFileArray = [];
-							this.tabBars = [];
-							//初始化数据
-							for (var i = 0; i < jsonObj.data.length; i++) {
-								this.jsonFileArray.push(jsonObj.data[i]);
-								if (!jsonObj.data[i].bfParentid) {
-									this.tabBars.push({
-										name: jsonObj.data[i].bfName,
-										id: jsonObj.data[i].id
-									})
+							let flag = true;
+							if (this.jsonFileArray.length === jsonObj.data.length)
+								flag = false;
+							if (flag) {
+								this.jsonFileArray = [];
+								this.tabBars = [];
+								//初始化数据
+								for (var i = 0; i < jsonObj.data.length; i++) {
+									this.jsonFileArray.push(jsonObj.data[i]);
+									if (!jsonObj.data[i].bfParentid) {
+										this.tabBars.push({
+											name: jsonObj.data[i].bfName,
+											id: jsonObj.data[i].id
+										})
+									}
 								}
+								this.loadIndex(0);
+								this.loadData();
+								this.productListFile = [];
 							}
-							this.loadIndex(0);
-							this.loadData();
-							this.productListFile = [];
 						} else {
 							uni.showToast({
 								icon: 'none',
@@ -140,12 +145,10 @@
 						}
 					}
 				});
-				this.setOnload(false);
 			}
 
 		},
 		methods: {
-			...mapMutations(['setOnload']),
 			/*顶部导航*/
 			getElSize(id) {
 				return new Promise((res, rej) => {

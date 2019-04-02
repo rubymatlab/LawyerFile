@@ -983,3 +983,597 @@ javax.servlet.ServletException: Missing or invalid X-AUTH-TOKEN header.
 [2019-04-02 00:45:31] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
 [2019-04-02 00:46:16] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
 [2019-04-02 00:48:21] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[admin]
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgdynamgraph.dao.core.CgDynamGraphDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormFieldDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormVersionDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.upload.CgFormUploadDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgreport.dao.core.CgReportDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.DepartAuthGroupDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.JeecgDictDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.demo.dao.JeecgMinidaoDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.mutiLang.dao.P3MutiLangDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.dict.dao.TSTypeDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.table.dao.CustomTableDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.dao.TSOperationDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.actInvite.dao.WxActInviteDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.auth.dao.JwSystemAuthDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderCustomDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderMainDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderProductDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ChatMessageHistoryDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ImDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailAttachDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailReceiverDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSBaseUserDao }
+[2019-04-02 13:02:41] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSUserDao }
+[2019-04-02 13:02:42] [INFO] [com.alibaba.druid.pool.DruidDataSource:928] {dataSource-1} inited
+[2019-04-02 13:02:43] [WARN] [org.hibernate.id.UUIDHexGenerator:59] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[2019-04-02 13:02:44] [WARN] [net.sf.ehcache.config.CacheConfiguration:698] Cache 'foreverCache' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'foreverCache' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+[2019-04-02 13:02:46] [INFO] [org.quartz.impl.StdSchedulerFactory:1208] Using default implementation for ThreadExecutor
+[2019-04-02 13:02:46] [INFO] [org.quartz.core.SchedulerSignalerImpl:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-04-02 13:02:46] [INFO] [org.quartz.core.QuartzScheduler:229] Quartz Scheduler v.2.3.0 created.
+[2019-04-02 13:02:46] [INFO] [org.quartz.simpl.RAMJobStore:155] RAMJobStore initialized.
+[2019-04-02 13:02:46] [INFO] [org.quartz.core.QuartzScheduler:294] Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-04-02 13:02:46] [INFO] [org.quartz.impl.StdSchedulerFactory:1362] Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+[2019-04-02 13:02:46] [INFO] [org.quartz.impl.StdSchedulerFactory:1366] Quartz scheduler version: 2.3.0
+[2019-04-02 13:02:46] [INFO] [org.quartz.core.QuartzScheduler:2287] JobFactory set to: org.jeecgframework.web.system.sms.util.JQuartzJobFactory@1861f536
+[2019-04-02 13:02:47] [INFO] [org.jeecgframework.core.timer.DynamicTask:252]  register time task class num is [0] 
+[2019-04-02 13:02:48] [INFO] [org.jeecgframework.core.timer.DataBaseSchedulerFactoryBean:648] Starting Quartz Scheduler now
+[2019-04-02 13:02:48] [INFO] [org.quartz.core.QuartzScheduler:547] Scheduler schedulerFactory_$_NON_CLUSTERED started.
+[2019-04-02 13:02:49] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:180]   ------ 初始化字典组 【系统缓存】-----------typeGroupsList-----size: [40]
+[2019-04-02 13:02:49] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:181]   ------ 初始化字典 【系统缓存】-----------typesList-----size: [40]
+[2019-04-02 13:02:49] [INFO] [org.jeecgframework.web.system.service.impl.MutiLangServiceImpl:43]   ------ 初始化国际化语言【系统缓存】  ------ size: [1219] 
+[2019-04-02 13:02:49] [INFO] [org.jeecgframework.web.system.service.impl.DynamicDataSourceServiceImpl:41]   ------ 初始化动态数据源配置【系统缓存】---------size: [2] 
+[2019-04-02 13:30:59] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 13:33:23] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:23] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:27] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:27] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:29] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:29] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:32] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:32] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:34] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:34] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:36] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:36] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:37] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 13:33:38] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:38] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:42] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:42] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:44] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:44] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:45] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:45] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:46] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:46] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:46] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:46] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:48] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:48] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:33:50] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:33:50] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:34:02] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:34:02] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:34:04] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:34:04] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:34:05] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:34:05] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:34:30] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:34:30] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:34:33] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:34:33] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:34:38] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:34:38] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:34:40] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:34:40] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:34:41] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:34:41] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:34:57] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:34:57] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:34:57] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:34:57] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:35:00] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:35:00] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:35:01] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:35:01] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:35:02] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:35:02] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:35:03] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:35:03] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:35:15] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:35:15] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:35:29] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:35:29] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:35:30] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:35:30] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:35:31] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:35:31] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:36:07] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:36:07] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:36:09] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:36:10] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:36:32] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:122] Username:admin ,验证码: 0zwv 错误!
+[2019-04-02 13:36:36] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:36:36] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:36:38] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:36:38] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:36:40] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:36:40] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:36:43] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:36:43] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:37:29] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:37:29] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:37:33] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\upload\files\20180715\qq_1531625977907.jpg (系统找不到指定的路径。)
+[2019-04-02 13:37:33] [INFO] [com.jeecg.chat.web.ImController:318] --通过流的方式获取文件异常--D:\upFiles\20170502\4afbfbedab64034f9015f1bca8c379310b551dab.jpg (系统找不到指定的路径。)
+[2019-04-02 13:38:06] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scoot]
+[2019-04-02 13:38:06] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scoot]
+[2019-04-02 13:38:54] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scoot]
+[2019-04-02 13:38:54] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scoot]
+[2019-04-02 13:39:03] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scoot]
+[2019-04-02 13:39:03] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scoot]
+[2019-04-02 13:39:58] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scoot]
+[2019-04-02 13:39:58] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scoot]
+[2019-04-02 13:41:55] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:122] Username:scoot ,验证码: kmk5 错误!
+[2019-04-02 13:44:14] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:14] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:16] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:16] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:17] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:17] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:19] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:19] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:28] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:28] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:30] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:30] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:34] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:34] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:36] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:37] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:38] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:38] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:40] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:40] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:41] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:41] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:46] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:46] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:44:48] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:44:48] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:53:51] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 13:55:46] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:55:46] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:55:49] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:55:49] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 13:56:25] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 13:56:25] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 14:19:52] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:19:52] [INFO] [org.jeecgframework.jwt.web.TokenController:62] 获取TOKEN,户账号密码错误[scott]
+[2019-04-02 14:19:57] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:22:57] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[admin]
+[2019-04-02 14:22:57] [ERROR] [org.jeecgframework.core.common.exception.GlobalExceptionResolver:86] 全局处理异常捕获:
+java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at org.jeecgframework.jwt.aop.RestAuthTokenInterceptor.preHandle(RestAuthTokenInterceptor.java:54)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:932)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.jeecgframework.core.aop.GZipFilter.doFilter(GZipFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.orm.hibernate4.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-04-02 14:23:18] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:24:03] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:24:03] [ERROR] [org.jeecgframework.core.common.exception.GlobalExceptionResolver:86] 全局处理异常捕获:
+java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at org.jeecgframework.jwt.aop.RestAuthTokenInterceptor.preHandle(RestAuthTokenInterceptor.java:54)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:932)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.jeecgframework.core.aop.GZipFilter.doFilter(GZipFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.orm.hibernate4.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-04-02 14:24:44] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:27:25] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:31:06] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:39:09] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[admin]
+[2019-04-02 14:40:42] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:41:09] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[admin]
+[2019-04-02 14:41:35] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:42:08] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:46:35] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:48:29] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 14:54:27] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 14:54:28] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 14:54:30] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 14:54:30] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 14:54:31] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 14:54:31] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 14:54:33] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 14:54:33] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 14:54:41] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 14:54:41] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 14:54:44] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:223]  >>>>>>>>>>>>>>>>>>>>>>>>>>  Login 用户登录成功，初始化Main首页用户信息  （Main 首页加载逻辑）  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+[2019-04-02 14:54:44] [INFO] [org.jeecgframework.web.system.controller.core.LoginController:264] login 资源路径returnURL：null
+[2019-04-02 15:00:23] [WARN] [org.springframework.web.servlet.PageNotFound:1114] No mapping found for HTTP request with URI [/lawyerfile/logincontroller.do] in DispatcherServlet with name 'springMvc'
+[2019-04-02 15:00:53] [WARN] [org.springframework.web.servlet.PageNotFound:1114] No mapping found for HTTP request with URI [/lawyerfile/logincontroller.do] in DispatcherServlet with name 'springMvc'
+[2019-04-02 15:37:45] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 16:39:19] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 16:39:19] [ERROR] [org.jeecgframework.core.common.exception.GlobalExceptionResolver:86] 全局处理异常捕获:
+java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at org.jeecgframework.jwt.aop.RestAuthTokenInterceptor.preHandle(RestAuthTokenInterceptor.java:54)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:932)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.jeecgframework.core.aop.GZipFilter.doFilter(GZipFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.orm.hibernate4.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-04-02 16:39:57] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 16:39:57] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 16:39:57] [ERROR] [org.jeecgframework.core.common.exception.GlobalExceptionResolver:86] 全局处理异常捕获:
+java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at org.jeecgframework.jwt.aop.RestAuthTokenInterceptor.preHandle(RestAuthTokenInterceptor.java:54)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:932)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.jeecgframework.core.aop.GZipFilter.doFilter(GZipFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.orm.hibernate4.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-04-02 16:40:38] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 16:40:38] [ERROR] [org.jeecgframework.core.common.exception.GlobalExceptionResolver:86] 全局处理异常捕获:
+java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at org.jeecgframework.jwt.aop.RestAuthTokenInterceptor.preHandle(RestAuthTokenInterceptor.java:54)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:932)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.jeecgframework.core.aop.GZipFilter.doFilter(GZipFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.orm.hibernate4.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgdynamgraph.dao.core.CgDynamGraphDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormFieldDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormVersionDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.upload.CgFormUploadDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgreport.dao.core.CgReportDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.DepartAuthGroupDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.JeecgDictDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.demo.dao.JeecgMinidaoDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.mutiLang.dao.P3MutiLangDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.dict.dao.TSTypeDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.table.dao.CustomTableDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.dao.TSOperationDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.actInvite.dao.WxActInviteDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.auth.dao.JwSystemAuthDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderCustomDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderMainDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderProductDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ChatMessageHistoryDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ImDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailAttachDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailReceiverDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSBaseUserDao }
+[2019-04-02 16:58:29] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSUserDao }
+[2019-04-02 16:58:30] [INFO] [com.alibaba.druid.pool.DruidDataSource:928] {dataSource-1} inited
+[2019-04-02 16:58:32] [WARN] [org.hibernate.id.UUIDHexGenerator:59] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[2019-04-02 16:58:33] [WARN] [net.sf.ehcache.config.CacheConfiguration:698] Cache 'foreverCache' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'foreverCache' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+[2019-04-02 16:58:36] [INFO] [org.quartz.impl.StdSchedulerFactory:1208] Using default implementation for ThreadExecutor
+[2019-04-02 16:58:36] [INFO] [org.quartz.core.SchedulerSignalerImpl:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-04-02 16:58:36] [INFO] [org.quartz.core.QuartzScheduler:229] Quartz Scheduler v.2.3.0 created.
+[2019-04-02 16:58:36] [INFO] [org.quartz.simpl.RAMJobStore:155] RAMJobStore initialized.
+[2019-04-02 16:58:36] [INFO] [org.quartz.core.QuartzScheduler:294] Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-04-02 16:58:36] [INFO] [org.quartz.impl.StdSchedulerFactory:1362] Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+[2019-04-02 16:58:36] [INFO] [org.quartz.impl.StdSchedulerFactory:1366] Quartz scheduler version: 2.3.0
+[2019-04-02 16:58:36] [INFO] [org.quartz.core.QuartzScheduler:2287] JobFactory set to: org.jeecgframework.web.system.sms.util.JQuartzJobFactory@1d062aea
+[2019-04-02 16:58:37] [INFO] [org.jeecgframework.core.timer.DynamicTask:252]  register time task class num is [0] 
+[2019-04-02 16:58:38] [INFO] [org.jeecgframework.core.timer.DataBaseSchedulerFactoryBean:648] Starting Quartz Scheduler now
+[2019-04-02 16:58:38] [INFO] [org.quartz.core.QuartzScheduler:547] Scheduler schedulerFactory_$_NON_CLUSTERED started.
+[2019-04-02 16:58:38] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:180]   ------ 初始化字典组 【系统缓存】-----------typeGroupsList-----size: [40]
+[2019-04-02 16:58:38] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:181]   ------ 初始化字典 【系统缓存】-----------typesList-----size: [40]
+[2019-04-02 16:58:39] [INFO] [org.jeecgframework.web.system.service.impl.MutiLangServiceImpl:43]   ------ 初始化国际化语言【系统缓存】  ------ size: [1219] 
+[2019-04-02 16:58:39] [INFO] [org.jeecgframework.web.system.service.impl.DynamicDataSourceServiceImpl:41]   ------ 初始化动态数据源配置【系统缓存】---------size: [2] 
+[2019-04-02 16:58:56] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 16:58:57] [ERROR] [org.jeecgframework.core.common.exception.GlobalExceptionResolver:86] 全局处理异常捕获:
+java.lang.IllegalArgumentException: JWT String argument cannot be null or empty.
+	at io.jsonwebtoken.lang.Assert.hasText(Assert.java:135)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:479)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:541)
+	at org.jeecgframework.jwt.aop.RestAuthTokenInterceptor.preHandle(RestAuthTokenInterceptor.java:54)
+	at org.springframework.web.servlet.HandlerExecutionChain.applyPreHandle(HandlerExecutionChain.java:134)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:932)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.jeecgframework.core.aop.GZipFilter.doFilter(GZipFilter.java:114)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.orm.hibernate4.support.OpenSessionInViewFilter.doFilterInternal(OpenSessionInViewFilter.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:312)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgdynamgraph.dao.core.CgDynamGraphDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormFieldDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.config.CgFormVersionDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgform.dao.upload.CgFormUploadDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.cgreport.dao.core.CgReportDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.DepartAuthGroupDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { org.jeecgframework.web.system.dao.JeecgDictDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.demo.dao.JeecgMinidaoDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.mutiLang.dao.P3MutiLangDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.dict.dao.TSTypeDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.tag.select.table.dao.CustomTableDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.core.biz.dao.TSOperationDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.actInvite.dao.WxActInviteDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.auth.dao.JwSystemAuthDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderCustomDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderMainDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.domo.order.dao.JpDemoOrderProductDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ChatMessageHistoryDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.chat.dao.ImDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailAttachDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailJformInnerMailReceiverDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSBaseUserDao }
+[2019-04-02 17:02:40] [INFO] [org.jeecgframework.minidao.factory.MiniDaoClassPathMapperScanner:48] register minidao name is { com.jeecg.mail.dao.P3MailTSUserDao }
+[2019-04-02 17:02:41] [INFO] [com.alibaba.druid.pool.DruidDataSource:928] {dataSource-1} inited
+[2019-04-02 17:02:43] [WARN] [org.hibernate.id.UUIDHexGenerator:59] HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+[2019-04-02 17:02:44] [WARN] [net.sf.ehcache.config.CacheConfiguration:698] Cache 'foreverCache' is set to eternal but also has TTI/TTL set.  To avoid this warning, clean up the config removing conflicting values of eternal, TTI and TTL. Effective configuration for Cache 'foreverCache' will be eternal='true', timeToIdleSeconds='0', timeToLiveSeconds='0'.
+[2019-04-02 17:02:47] [INFO] [org.quartz.impl.StdSchedulerFactory:1208] Using default implementation for ThreadExecutor
+[2019-04-02 17:02:47] [INFO] [org.quartz.core.SchedulerSignalerImpl:61] Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2019-04-02 17:02:47] [INFO] [org.quartz.core.QuartzScheduler:229] Quartz Scheduler v.2.3.0 created.
+[2019-04-02 17:02:47] [INFO] [org.quartz.simpl.RAMJobStore:155] RAMJobStore initialized.
+[2019-04-02 17:02:47] [INFO] [org.quartz.core.QuartzScheduler:294] Scheduler meta-data: Quartz Scheduler (v2.3.0) 'schedulerFactory' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2019-04-02 17:02:47] [INFO] [org.quartz.impl.StdSchedulerFactory:1362] Quartz scheduler 'schedulerFactory' initialized from an externally provided properties instance.
+[2019-04-02 17:02:47] [INFO] [org.quartz.impl.StdSchedulerFactory:1366] Quartz scheduler version: 2.3.0
+[2019-04-02 17:02:47] [INFO] [org.quartz.core.QuartzScheduler:2287] JobFactory set to: org.jeecgframework.web.system.sms.util.JQuartzJobFactory@20eff806
+[2019-04-02 17:02:48] [INFO] [org.jeecgframework.core.timer.DynamicTask:252]  register time task class num is [0] 
+[2019-04-02 17:02:50] [INFO] [org.jeecgframework.core.timer.DataBaseSchedulerFactoryBean:648] Starting Quartz Scheduler now
+[2019-04-02 17:02:50] [INFO] [org.quartz.core.QuartzScheduler:547] Scheduler schedulerFactory_$_NON_CLUSTERED started.
+[2019-04-02 17:02:50] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:180]   ------ 初始化字典组 【系统缓存】-----------typeGroupsList-----size: [40]
+[2019-04-02 17:02:50] [INFO] [org.jeecgframework.web.system.service.impl.SystemServiceImpl:181]   ------ 初始化字典 【系统缓存】-----------typesList-----size: [40]
+[2019-04-02 17:02:50] [INFO] [org.jeecgframework.web.system.service.impl.MutiLangServiceImpl:43]   ------ 初始化国际化语言【系统缓存】  ------ size: [1219] 
+[2019-04-02 17:02:50] [INFO] [org.jeecgframework.web.system.service.impl.DynamicDataSourceServiceImpl:41]   ------ 初始化动态数据源配置【系统缓存】---------size: [2] 
+[2019-04-02 17:02:55] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 17:11:18] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 17:11:52] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
+[2019-04-02 17:12:28] [INFO] [org.jeecgframework.jwt.web.TokenController:47] 获取TOKEN[scott]
