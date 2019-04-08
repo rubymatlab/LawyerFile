@@ -117,10 +117,7 @@
 						if (res.statusCode === 200) {
 							let json = JSON.stringify(res.data);
 							let jsonObj = JSON.parse(json);
-							let flag = true;
-							if (this.jsonFileArray.length === jsonObj.data.length)
-								flag = false;
-							if (flag) {
+							if (this.jsonFileArray.length !== jsonObj.data.length) {
 								this.jsonFileArray = [];
 								this.tabBars = [];
 								//初始化数据
