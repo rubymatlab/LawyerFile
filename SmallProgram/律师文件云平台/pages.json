@@ -37,6 +37,10 @@
 				"navigationBarTitleText": "保存的模板记录"
 			}
         }
+        ,{
+            "path" : "pages/previewedit/previewedit",
+            "style" : {}
+        }
     ],
     "tabBar": {
         "color": "#7a7e83",

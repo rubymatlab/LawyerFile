@@ -6,13 +6,16 @@
 		</view>
 		<view v-if="hasLogin">
 			<view v-show="current === 0">
+				<view class="uni-form-item uni-column">
+					<input class="uni-input" @blur="onBlur" v-model="searchContent"  style="margin-left: 30upx;margin-right: 30upx;margborder-radius: 8upx;box-shadow: 2px 2px 5px #333333;" confirm-type="search" placeholder="键盘右下角按钮搜索" />
+				</view>
 				<view class="uni-padding-wrap uni-common-mt">
 					<view class="csstext" v-for="(vwdetail,index) in data" :key="index">
 						<view hover-class="uni-product-hover">
-							<image class="uni-record-image" :src="imgFileUrl" @click="tapDownload(vwdetail)">
+							<image class="uni-record-image" :src="imgFileUrl" @click="tapRedictPreviewEdit(vwdetail)">
 							</image>
 						</view>
-						<view style="display: flex;flex-direction: column;">
+						<view style="display: flex;flex-direction: column;" hover-class="uni-product-hover" @click="tapDownload(vwdetail)">
 							<text>{{vwdetail.bfName}}</text><text>{{vwdetail.createDate}}</text>
 						</view>
 						<view class="tag-view" hover-class="uni-product-hover" @click="tapDownloadDetail(vwdetail)">
@@ -28,10 +31,10 @@
 				<view class="uni-padding-wrap uni-common-mt">
 					<view class="csstext" v-for="(vwdetail,index) in data" :key="index">
 						<view hover-class="uni-product-hover">
-							<image class="uni-record-image" :src="imgFileUrl" @click="tapDownload(vwdetail)">
+							<image class="uni-record-image" :src="imgFileUrl" @click="tapRedictPreviewEdit(vwdetail)">
 							</image>
 						</view>
-						<view style="display: flex;flex-direction: column;">
+						<view style="display: flex;flex-direction: column;" hover-class="uni-product-hover" @click="tapDownload(vwdetail)">
 							<text>{{vwdetail.bfName}}</text><text>{{vwdetail.createDate}}</text>
 						</view>
 						<view class="tag-view" hover-class="uni-product-hover" @click="tapDownloadDetail(vwdetail)">
@@ -87,6 +90,7 @@
 				styleType: 'text',
 				styleIndex: 0,
 				colorIndex: 0,
+				searchContent:""
 			}
 		},
 		computed: mapState(['accessToken', 'userName', 'hasLogin']),
@@ -106,8 +110,7 @@
 			/* }, 300); */
 		},
 		onPullDownRefresh() {
-
-			console.log('onPullDownRefresh');
+			//console.log('onPullDownRefresh');
 			this.initData();
 		},
 		methods: {
@@ -153,7 +156,8 @@
 							pageNo: pageNo,
 							pageSize: pageSize,
 							userName: this.userName,
-							isStore: this.isStore
+							isStore: this.isStore,
+							searchContent:this.searchContent
 						},
 						header: {
 							'content-type': 'application/json',
@@ -238,6 +242,17 @@
 						}
 					}
 				})
+			},
+			tapRedictPreviewEdit(item){
+				let id=item.id;
+				if (!this.forcedLogin) {
+					uni.navigateTo({
+						url: '../previewedit/previewedit?id=' + id,
+					});
+				}
+			},
+			onBlur(){
+				this.initData();
 			},
 			switchChange(e, item) {
 				let id = item.id;

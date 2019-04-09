@@ -23,9 +23,9 @@
 			</view>
 			<view class="uni-product" v-for="(product,index) in productListFile" :key="index">
 				<view class="image-view" hover-class="uni-product-hover">
-					<image v-if="renderImage" class="uni-product-image" :src="product.image" :id="product.id" @click="tapDownload"></image>
+					<image v-if="renderImage" class="uni-product-image" :src="product.image" @click="tapRedict(product.id)"></image>
 				</view>
-				<view hover-class="uni-product-hover" @click="tapRedict(product.id)">
+				<view hover-class="uni-product-hover" :id="product.id" @click="tapDownload">
 					<uni-tag :text="product.title" type="primary" :circle="true"></uni-tag>
 				</view>
 			</view>
@@ -80,7 +80,7 @@
 				imagArrow: '../../static/img/arrow.png'
 			}
 		},
-		computed: mapState(['forcedLogin', 'hasLogin', 'userName', 'accessToken', 'isOnload']),
+		computed: mapState(['forcedLogin', 'hasLogin', 'userName', 'accessToken']),
 		onLoad() {
 			if (!this.hasLogin) {
 				uni.showModal({
@@ -104,7 +104,7 @@
 			}
 		},
 		onShow() {
-			if (this.hasLogin) {
+			if (this.hasLogin && this.jsonFileArray.length == 0) {
 				uni.request({
 					url: this.GLOBAL + '/rest/basFileController/list/1/20000',
 					method: 'GET',
@@ -117,23 +117,21 @@
 						if (res.statusCode === 200) {
 							let json = JSON.stringify(res.data);
 							let jsonObj = JSON.parse(json);
-							if (this.jsonFileArray.length !== jsonObj.data.length) {
-								this.jsonFileArray = [];
-								this.tabBars = [];
-								//初始化数据
-								for (var i = 0; i < jsonObj.data.length; i++) {
-									this.jsonFileArray.push(jsonObj.data[i]);
-									if (!jsonObj.data[i].bfParentid) {
-										this.tabBars.push({
-											name: jsonObj.data[i].bfName,
-											id: jsonObj.data[i].id
-										})
-									}
+							this.jsonFileArray = [];
+							this.tabBars = [];
+							//初始化数据
+							for (var i = 0; i < jsonObj.data.length; i++) {
+								this.jsonFileArray.push(jsonObj.data[i]);
+								if (!jsonObj.data[i].bfParentid) {
+									this.tabBars.push({
+										name: jsonObj.data[i].bfName,
+										id: jsonObj.data[i].id
+									})
 								}
-								this.loadIndex(0);
-								this.loadData();
-								this.productListFile = [];
 							}
+							this.loadIndex(0);
+							this.loadData();
+							this.productListFile = [];
 						} else {
 							uni.showToast({
 								icon: 'none',
@@ -143,7 +141,6 @@
 					}
 				});
 			}
-
 		},
 		methods: {
 			/*顶部导航*/

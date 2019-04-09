@@ -41,6 +41,8 @@ import org.jeecgframework.poi.excel.entity.TemplateExportParams;
 import org.jeecgframework.poi.excel.entity.vo.NormalExcelConstants;
 import org.jeecgframework.poi.excel.entity.vo.TemplateExcelConstants;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.hibernate.criterion.Criterion;
+import org.hibernate.criterion.Restrictions;
 import org.jeecgframework.core.util.ResourceUtil;
 import java.io.IOException;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -377,6 +379,7 @@ public class VwBasFileDetailController extends BaseController {
 		int pageSize= json.getInt("pageSize");
 		String userName= json.getString("userName");
 		String isStore=json.getString("isStore");
+		String searchContent=json.getString("searchContent");
 		if(pageSize > Globals.MAX_PAGESIZE){
 			return Result.error("每页请求不能超过" + Globals.MAX_PAGESIZE + "条");
 		}
@@ -384,6 +387,18 @@ public class VwBasFileDetailController extends BaseController {
 		query.setCurPage(pageNo<=0?1:pageNo);
 		query.setPageSize(pageSize<1?1:pageSize);
 		query.eq("createBy", userName);
+		
+		/*模糊匹配*/
+		Criterion[] c =new Criterion[2]; 
+		query.like("bfName", "%"+searchContent+"%"); 
+		query.like("bfdContent", "%"+searchContent+"%"); 
+		for (int i = 0; i < 2; i++) { 
+			c[i]=query.getCriterionList().getParas(1); //CriterionList会自动往前填充 
+			query.getCriterionList().removePara(1); 
+		} 
+		query.or(c[0], c[1]);
+		/*模糊匹配end*/
+		
 		if("Y".equals(isStore))
 			query.eq("bfdStore", "Y");
 		
