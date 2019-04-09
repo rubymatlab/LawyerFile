@@ -104,7 +104,7 @@
 			}
 		},
 		onShow() {
-			if (this.hasLogin && this.jsonFileArray.length == 0) {
+			if (this.hasLogin && this.jsonFileArray.length === 0) {
 				uni.request({
 					url: this.GLOBAL + '/rest/basFileController/list/1/20000',
 					method: 'GET',
